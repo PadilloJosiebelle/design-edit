@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile </title>
+  <link rel="stylesheet" href="../appdev/assets/css/~profile.css">
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+  <div class="main--content">
+    <div class="header--wrapper">
+        <div class="header--title">
+            <h1>Computer Laboratory Management</h1>
+        </div>
+        <div class="user--info">
+        </div>
+    </div>
+
+    <!-- Input Content -->
+    <div class="tabular--wrapper">
+        <h3 class="main--title">Add Info</h3>
+        <div class="input-container">
+            <input type="date" placeholder="Date">
+            <input type="text" placeholder="PC No.">
+            <input type="text" placeholder="Activity">
+            <a href="history.html"><button type="button">Enter</button></a>
+        </div>            
+    </div>
+
+    <!-- Additional Content -->
+    <div class="additional-info" hidden>
+        <h3 class="info--title">Student Info</h3>
+        <div class="info-container">
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="School ID">
+            <input type="text" placeholder="Class">
+        </div>
+    </div>
+</div>
+
+  <script>
+    let btn = document.querySelector("#btn");
+    let sidebar = document.querySelector(".sidebar");
+    let searchBtn = document.querySelector(".bx-search");
+
+    btn.onclick = function(){
+      sidebar.classList.toggle("active");
+    }    
+    searchBtn.onclick = function(){
+      sidebar.classList.toggle("active");
+    }
+  </script>
+
+</body>
+</html>
+

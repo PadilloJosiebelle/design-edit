@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="../appdev/assets/css/~dashboard.css">
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <div class="sidebar">
+    <div class="logo_content">
+      <div class="logo">
+        <div class="logo_name">DASHBOARD</div>
+      </div>
+      <i class='bx bx-menu' id="btn"></i>
+    </div>
+
+    <ul class="nav_list">
+      <li>
+        <a href="dashboard.html">
+          <i class='bx bxs-calculator'></i>
+          <span class="links_name">Dashboard</span>
+        </a>
+        <span class="tooltip">Dashboard</span>
+      </li>
+
+      <li>
+        <a href="management.html">
+          <i class='bx bxs-book'></i>
+          <span class="links_name">Users</span>
+        </a>
+        <span class="tooltip">Users</span>
+      </li>
+
+      <li>
+        <a href="registry.php">
+          <i class='bx bxs-medal'></i>
+          <span class="links_name">Registry</span>
+        </a>
+        <span class="tooltip">Registry</span>
+      </li>
+      
+      <li>
+        <a href="monitoring.php">
+          <i class='bx bx-fingerprint'></i>
+          <span class="links_name">Monitoring</span>
+        </a>
+        <span class="tooltip">Monitoring</span>
+      </li>
+
+      <li>
+        <a href="transcripts.php">
+          <i class='bx bxs-paper-plane'></i>
+          <span class="links_name">Transcripts</span>
+        </a>
+        <span class="tooltip">Transcripts</span>
+      </li>
+
+      <li>
+        <a href="index.html">
+          <i class='bx bxs-log-out'></i>
+          <span class="links_name">Logout</span>
+        </a>
+        <span class="tooltip">Logout</span>
+      </li>
+    </ul>
+  </div>
+
+  <div class="main--content">
+    <div class="header--wrapper">
+        <div class="header--title">
+            <h1>Computer Laboratory Management</h1>
+        </div>
+        <div class="user--info">
+        </div>
+        
+    </div>
+
+    <!--Cards -->
+    
+    <div class="cards-container">
+      <div class="card">
+        <h2>224</h2>
+        <p>Entries</p>
+      </div>
+      <div class="card">
+        <h2>40</h2>
+        <p>Units</p>
+      </div>
+      <div class="card">
+        <h2>4</h2>
+        <p>Issue</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script>
+    let btn = document.querySelector("#btn");
+    let sidebar = document.querySelector(".sidebar");
+    let searchBtn = document.querySelector(".bx-search");
+
+    btn.onclick = function(){
+      sidebar.classList.toggle("active");
+    }    
+    searchBtn.onclick = function(){
+      sidebar.classList.toggle("active");
+    }
+  </script>
+</body>
+</html>
